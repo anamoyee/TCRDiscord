@@ -34,6 +34,9 @@ def rm_r_dist_directory():
     print_error('./dist/ folder not found, are you in the correct directory?')
     sys.exit(1)
 
+  for file in dist_folder.iterdir():
+    file.unlink()
+
 def run_shell_commands(*, version_after_bump: str, git_add_path: str):
   cmds = f"""
 git add .
