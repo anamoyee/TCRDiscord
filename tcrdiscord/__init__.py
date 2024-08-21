@@ -8,6 +8,7 @@ from .src.tcrd_constants import DISCORD_EPOCH
 from .src.tcrd_dpy import escape_markdown, escape_mentions, remove_markdown
 from .src.tcrd_embeds import embed, modal
 from .src.tcrd_limits import DiscordLimits
+from .src.tcrd_markdown import codeblock, codeblocks, discord_error, uncodeblock
 from .src.tcrd_permissions import PERMISSIONS_DICT, Permission, permissions
 from .src.tcrd_permissions import Permission as DiscordPermission
 from .src.tcrd_permissions import permissions as discord_permissions
