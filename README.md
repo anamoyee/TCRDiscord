@@ -1,5 +1,5 @@
 # TCRDiscord
 
-Various utilities for working with the `hikari` library and the Discord API.
+Various utilities for working with the `hikari` library (+ its derivatives) and the Discord API.
 
 
