@@ -1,4 +1,3 @@
-upload.py
 bump_version.py
 .venv/
 **/__pycache__/
