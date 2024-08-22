@@ -7,7 +7,7 @@ from typing import Unpack as __Unpack
 
 import hikari as _hk
 
-from .tcrd_string import IFYs as __IFYs
+from .tcrd_string import IFYs as _IFYs
 
 
 class HikariDictMessage(_t.TypedDict):
@@ -61,10 +61,10 @@ class CommandIDsDict(dict):
     """Iterate over `tuple[command_id, command_mention]` of commands in this dict where command mention is `f'</{command_name}:{command_id}>'`."""
 
     for command_name, command_id in self.items():
-      yield command_id, __IFYs.commandify(command_name, command_id)
+      yield command_id, _IFYs.commandify(command_name, command_id)
 
   def mentions_named(self) -> _Generator[tuple[str, str], None, None]:
     """Iterate over `tuple[command_name, command_mention]` of commands in this dict where command mention is `f'</{command_name}:{command_id}>'`."""
 
     for command_name, command_id in self.items():
-      yield command_name, __IFYs.commandify(command_name, command_id)
+      yield command_name, _IFYs.commandify(command_name, command_id)
