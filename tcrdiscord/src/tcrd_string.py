@@ -1,8 +1,6 @@
 import os
 import pathlib as p
-import re as regex
-import string
-from typing import Any, Literal, NoReturn
+from typing import Any, Literal
 
 import arc
 from tcrutils import UniqueDefault as RaiseError
@@ -188,3 +186,8 @@ class IFYs:
     _ify_snowflake_errorer(ctx.interaction.command_id)
 
     return f'<{ctx.command.display_name}:{ctx.interaction.command_id}>'
+
+
+def backtick_comma_str_list_join(*args: str, joiner: str = ', ', pattern: str = '`%s`', fix_backticks: bool = True) -> str:
+  """Generate a colon-styled list of strings to display in Discord. Replace any backticks with apostrophes by default if fix_backticks is True."""
+  return joiner.join((pattern % (a.replace("`", "'") if fix_backticks else a)) for a in args)

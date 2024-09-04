@@ -14,5 +14,5 @@ from .src.tcrd_permissions import Permission as DiscordPermission
 from .src.tcrd_permissions import permissions as discord_permissions
 from .src.tcrd_shorts import confirm
 from .src.tcrd_snowflake import is_snowflake
-from .src.tcrd_string import IFYs, get_token
+from .src.tcrd_string import IFYs, backtick_comma_str_list_join, get_token
 from .version import __version__
