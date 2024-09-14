@@ -22,6 +22,9 @@ class AsyncCachedFetch:
     async def fetch(self) -> Output:
         return await self.async_callable()
 
+    def has_cache(self) -> bool:
+        return self._last_result is not _MISSING
+
     def clear_cache(self) -> None:
         self._last_result = None
 
