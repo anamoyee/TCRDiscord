@@ -3,6 +3,7 @@
 
 from .src import tcrd_types as types
 from .src.tcrd_alias import get_guild_count
+from .src.tcrd_cached_fetch import AsyncCachedFetch, AsyncCachedFetchWithConverter
 from .src.tcrd_commands import get_slash_command_ids
 from .src.tcrd_constants import DISCORD_EPOCH
 from .src.tcrd_dpy import escape_markdown, escape_mentions, remove_markdown
