@@ -1,6 +1,5 @@
 """TCRUtils Discord. Contains various features related to bot development on discord and other stuff maybe."""
 
-
 from .src import tcrd_types as types
 from .src.tcrd_alias import get_guild_count
 from .src.tcrd_cached_fetch import AsyncCachedFetch, AsyncCachedFetchWithConverter
